@@ -1,0 +1,94 @@
+{
+  "biblioteca": [
+    {
+      "titulo": "Manual de Franquicias",
+      "editorial": "Ecoe Ediciones",
+      "edicion": "1",
+      "isbn": "978-12345",
+      "autores": "Juan Pérez",
+      "codigo sena": "100000001",
+      "descripcion": "Guía práctica para crear, operar y expandir franquicias"
+    },
+    {
+      "titulo": "Coaching Samurai",
+      "editorial": "Ediciones Granica",
+      "edicion": "2",
+      "isbn": "978-22334",
+      "autores": "Leonardo Wolk",
+      "codigo sena": "100000002",
+      "descripcion": "Una estrategia de liderazgo basada en valores y disciplina"
+    },
+    {
+      "titulo": "Mercadotecnia",
+      "editorial": "McGrawHill",
+      "edicion": "5",
+      "isbn": "978-33445",
+      "autores": "Philip Kotler",
+      "codigo sena": "100000003",
+      "descripcion": "Fundamentos y estrategias de marketing moderno"
+    },
+    {
+      "titulo": "Los Instrumentos de la Gestión Ambiental en Empresa",
+      "editorial": "Editorial UOC",
+      "edicion": "1",
+      "isbn": "978-44556",
+      "autores": "Marta Roca",
+      "codigo sena": "100000004",
+      "descripcion": "Herramientas clave para la sostenibilidad empresarial"
+    },
+    {
+      "titulo": "Formulación y Evaluación de Proyectos",
+      "editorial": "Alfaomega",
+      "edicion": "3",
+      "isbn": "978-55667",
+      "autores": "Nassir Sapag Chain",
+      "codigo sena": "100000005",
+      "descripcion": "Técnicas y análisis para desarrollar proyectos rentables"
+    },
+    {
+      "titulo": "Administración Moderna",
+      "editorial": "Pearson",
+      "edicion": "4",
+      "isbn": "978-66778",
+      "autores": "Stephen Robbins",
+      "codigo sena": "100000006",
+      "descripcion": "Teoría y práctica de la administración contemporánea"
+    },
+    {
+      "titulo": "La Pequeña y Mediana Empresa",
+      "editorial": "Trillas",
+      "edicion": "2",
+      "isbn": "978-77889",
+      "autores": "Carlos Delgado",
+      "codigo sena": "100000007",
+      "descripcion": "Estrategias de desarrollo para PYMES"
+    },
+    {
+      "titulo": "Administración de la Cadena de Suministro",
+      "editorial": "Pearson",
+      "edicion": "3",
+      "isbn": "978-88990",
+      "autores": "Sunil Chopra",
+      "codigo sena": "100000008",
+      "descripcion": "Gestión eficiente de los procesos logísticos"
+    },
+    {
+      "titulo": "Cómo Ser un Emprendedor Exitoso",
+      "editorial": "Panamericana",
+      "edicion": "1",
+      "isbn": "978-99001",
+      "autores": "Laura Torres",
+      "codigo sena": "100000009",
+      "descripcion": "Claves y consejos prácticos para emprender"
+    },
+    {
+      "titulo": "Contabilidad General",
+      "editorial": "Ecoe Ediciones",
+      "edicion": "6",
+      "isbn": "978-10101",
+      "autores": "Carlos Hernández",
+      "codigo sena": "100000010",
+      "descripcion": "Fundamentos de la contabilidad financiera y de gestión"
+    }
+  ]
+}
