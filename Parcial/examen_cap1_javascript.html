@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen Parcial - Fundamentos de JavaScript</title>
+    <link rel="stylesheet" href="examen_cap1_javascript.css">
+</head>
+<body>
+    <div class="header">
+        <h1>📝 EXAMEN PARCIAL</h1>
+        <h2>Fundamentos de JavaScript - Capítulo 1</h2>
+    </div>
+
+    <div class="instructions">
+        <h3>📋 INSTRUCCIONES GENERALES</h3>
+        <ul>
+            <li><strong>Tiempo estimado:</strong> 90 minutos</li>
+            <li><strong>Total de puntos:</strong> 100 puntos (más 10 puntos bonus)</li>
+            <li><strong>Formato:</strong> Complete el código donde se indique "// TU CÓDIGO AQUÍ"</li>
+            <li><strong>Evaluación:</strong> Cada ejercicio tiene un valor específico de puntos</li>
+            <li><strong>Herramientas:</strong> Puede usar la consola del navegador para depurar</li>
+        </ul>
+        
+        <div class="highlight">
+            <strong>💡 CONSEJOS:</strong>
+            <ul>
+                <li>Lea cuidadosamente cada instrucción antes de comenzar</li>
+                <li>Pruebe su código paso a paso</li>
+                <li>Use console.log() para verificar sus resultados</li>
+                <li>Revise la consola del navegador para ver los mensajes</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="exam-content">
+        <h3>🎯 TEMAS EVALUADOS</h3>
+        <ul>
+            <li>Variables y tipos de datos (var, let, const)</li>
+            <li>Operadores matemáticos y de comparación</li>
+            <li>Operadores lógicos (&&, ||, !)</li>
+            <li>Funciones matemáticas (Math)</li>
+            <li>Métodos de strings</li>
+            <li>Arrays y sus operaciones</li>
+            <li>Estructuras de control (if-else, switch)</li>
+            <li>Ciclos (for, while, do-while)</li>
+            <li>Funciones</li>
+            <li>Programación Orientada a Objetos (Bonus)</li>
+        </ul>
+
+        <hr>
+
+        <h3>🚀 PREPARACIÓN DEL EXAMEN</h3>
+        <p>Para comenzar el examen, haga clic en el botón "Iniciar Examen" y siga las instrucciones que aparecerán en pantalla.</p>
+        
+        <div style="text-align: center; margin: 30px 0;">
+            <button class="btn" onclick="iniciarExamen()">▶️ Iniciar Examen</button>
+            <button class="btn btn-secondary" onclick="limpiarPantalla()">🔄 Limpiar Pantalla</button>
+        </div>
+
+        <div id="resultados"></div>
+    </div>
+
+    <div class="footer">
+        <p><strong>¡Buena suerte en tu examen!</strong> 🍀</p>
+        <p>Recuerda revisar la consola del navegador (F12) para ver todos los resultados</p>
+    </div>
+
+    <script src="examen_cap1_javascript.js"></script>
+    <script>
+        function iniciarExamen() {
+            // Limpiar pantalla anterior
+            document.getElementById('resultados').innerHTML = '';
+            
+            // Crear un div para mostrar los resultados del examen
+            const resultadosDiv = document.getElementById('resultados');
+            resultadosDiv.innerHTML = '<h3>📊 RESULTADOS DEL EXAMEN</h3><div id="examen-output"></div>';
+            
+            // Redirigir la salida de document.writeln al div
+            const originalWriteln = document.writeln;
+            const outputDiv = document.getElementById('examen-output');
+            
+            document.writeln = function(...args) {
+                outputDiv.innerHTML += args.join(' ') + '<br>';
+            };
+            
+            // Ejecutar el examen
+            try {
+                // Aquí se ejecutaría el código del examen
+                // Por ahora, mostraremos un mensaje de ejemplo
+                outputDiv.innerHTML = `
+                    <div class="highlight">
+                        <h4>✅ Examen iniciado correctamente</h4>
+                        <p>El archivo JavaScript del examen se ha cargado. Para ver los ejercicios, 
+                        abre la consola del navegador (F12) y revisa el archivo <code>examen_cap1_javascript.js</code>.</p>
+                        <p><strong>Pasos a seguir:</strong></p>
+                        <ol>
+                            <li>Abre la consola del navegador (F12)</li>
+                            <li>Ve a la pestaña "Sources" o "Fuentes"</li>
+                            <li>Busca el archivo <code>examen_cap1_javascript.js</code></li>
+                            <li>Completa cada ejercicio donde dice "// TU CÓDIGO AQUÍ"</li>
+                            <li>Guarda el archivo y recarga la página para ver los resultados</li>
+                        </ol>
+                    </div>
+                `;
+            } catch (error) {
+                outputDiv.innerHTML = `<div style="color: red;">Error: ${error.message}</div>`;
+            }
+            
+            // Restaurar document.writeln original
+            document.writeln = originalWriteln;
+        }
+        
+        function limpiarPantalla() {
+            document.getElementById('resultados').innerHTML = '';
+        }
+        
+        // Mostrar mensaje de bienvenida
+        console.log("🎓 Bienvenido al Examen de JavaScript - Capítulo 1");
+        console.log("📝 Para comenzar, haz clic en 'Iniciar Examen'");
+        console.log("🔧 Abre la consola (F12) para ver más información");
+    </script>
+</body>
+</html> 
