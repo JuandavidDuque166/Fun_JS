@@ -1,0 +1,22 @@
+.parrafos {
+    color: rgb(0, 102, 255);
+    font-size: 40px;
+}
+/* Llamar un ID */
+#parrafo_id {
+    color:blueviolet;
+    font-size: 100px;
+    /* Aumenta e tamaño del texto*/
+}
+
+/*selectores multiples*/
+
+.contenedor p,h2{
+    color:rgb(63, 49, 31);
+    font-size:30pxs;
+}
+
+button:hover{
+    background-color: blue;/*cambia el color de fondo de un elemento*/
+    color:blanchedalmond;/ Cambia el color del texto de un elemento*/
+}
