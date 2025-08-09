@@ -1,0 +1,106 @@
+body{
+    font-family Arial,helvetica, sans-serif;
+    background-color: rgb(245, 250, 250);
+    margin: 0;/*Elimina el margen exterior por defecto*/
+}
+
+.header{
+    display: flex; /*Usar flexbox para organizar los elementos en fila */
+    align-items: center;/*centra verticalmente los elementos dentro del header */
+    justify-content: space-between; /*Posiciona el elemento en los extremos */
+    background-color: rgb(51, 148, 21); /*Color de fondo*/
+    padding: 10px 30px; /*Espaciado interno de los elementos*/
+    box-sizing: border-box; /*Incluye padding en el ancho total*/
+}
+
+.imagen{
+width: 80px; /*Ancho*/
+height: 80px; /*largo*/
+border-radius: 50%; /* Redondear la imagen*/
+object-fit: cover; /*Ajusta la imagen para que no se deforme */
+display: block; /*Hace que la imagen sea un bloque*/
+}
+
+.header-centro{
+    flex: 1; /*Ocupa el espacio disponible entre imagen y menu*/
+    text-align: center; /*centra el texto horizontalmente*/
+}
+.titulo{
+    color:blue;
+    margin:0;
+    font:2ren;
+}
+
+#subtitulo{
+    margin: 5px 0 0 0;/*Espacio pequeño arriba, sin margenes abajo*/
+    font-size 1.2rem;
+    color:bisque;
+}
+
+.header-nav ul{
+    list-style: none; /*Quita los estilos de lista*/
+    display: flex; /*Muestra los elementos de manera horizontal*/
+    gap: 20px; /*Espacio entre elementos*/
+    margin: 0;
+    padding: 0;
+}
+
+.header-nav a{
+    color:aliceblue;
+    text-decoration: none; /* Quita el subrayado*/
+    font-weight: bold;/*le coloca una negrilla a los li*/
+    transition: color 0.9s; /*Agrega una transicion a los elementos*/
+}
+.header-nav a:hover{/*Hover es una animacion cuando pasa el raton por encima del elemento*/
+    color:rgb(126, 4, 126); /*Color del texto*/
+}
+.info, .contacto{
+    background-color: rgb(238, 238, 238);/*Fondo del section*/
+    margin: 20px;/*Espacio interior*/
+    padding: 15px; /*Espacio ineterior*/
+    border:2px solid#CCC; /*borde del contenedor*/
+    border-radius: 10px; /*borde redondeado*/
+}
+
+a{
+    color:rgb(71, 71, 87)
+    text-decoration:. none; /*Quita el subrayado*/
+}
+
+a:hover{
+    color:red;
+}
+
+input{
+    display: block; /*Hace que el input ocupe todo el ancho disponible*/
+    width: 100%; /*ocupa el 100% el ancho del contenedor*/
+    padding: 8px;
+    box-sizing: border-box;
+}
+input:focus{
+    border:5px solid rebeccapurple;
+    outline: none; /*quita el borde por defecto*/
+}
+
+button{
+    background-color: blue;
+    color:azure;
+    padding: 10px;
+    border:none;
+    cursor:pointer;
+}
+button:hover{
+    background-color: rgb(60, 60, 160);
+}
+button:active{
+    transform: scale(0.95);/*Reduce el tamaño del boton al hacer clic*/
+    background-color: blueviolet;
+    color:azure
+}
+.main-footer{
+    background-color: aliceblue;
+    text-align: center;
+    padding:10px 0;
+    margin-top:30 px;
+    font-size:0.9rem;/*Tamaño del size*/
+}

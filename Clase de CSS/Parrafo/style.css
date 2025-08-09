@@ -1,0 +1,28 @@
+.parrafos{
+    color:chocolate;
+}
+#parrafo_id{
+    color:rgb(196, 196, 16);
+    font-size: 30px;
+}
+.contenedor{
+    color:blueviolet
+}
+
+button:hover{
+    border-radius: 50px;
+    color:ghostwhite;
+    background-color:wheat;
+    border:none;
+}
+
+button:active{
+    background-color: steelblue;
+    transform: scale(0.95);
+}
+
+input:focus{
+    border: 10px solid rgb(8,204,8);
+    background-color: aquamarine;
+    outline:none;/*Elimina el borde adicional por defecto*/
+}
